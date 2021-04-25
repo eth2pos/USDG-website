@@ -4,45 +4,103 @@ export const Nav00DataSource = {
   page: { className: 'home-page' },
   logo: {
     className: 'header0-logo',
-    children: 'https://i.postimg.cc/SQYD6cxn/Group-3x.png',
+    children: 'https://i.imgur.com/Zcg5WF6.png',
   },
   Menu: {
     className: 'header0-menu',
     children: [
       {
-        name: 'item3',
-        className: 'header0-item kmnivz7qz9f-editor_css',
+        name: 'item0',
+        className: 'header0-item knxaczebe1-editor_css',
         children: {
           href: '#',
-          children: [{ children: '导航四', name: 'text' }],
+          children: [{ children: '导航一', name: 'text' }],
         },
+        subItem: [
+          {
+            name: 'sub0',
+            className: 'item-sub',
+            children: {
+              className: 'item-sub-item',
+              children: [
+                {
+                  name: 'image0',
+                  className: 'item-image',
+                  children:
+                    'https://gw.alipayobjects.com/zos/rmsportal/ruHbkzzMKShUpDYMEmHM.svg',
+                },
+                {
+                  name: 'title',
+                  className: 'item-title',
+                  children: 'Ant Design',
+                },
+                {
+                  name: 'content',
+                  className: 'item-content',
+                  children: '企业级 UI 设计体系',
+                },
+              ],
+            },
+          },
+          {
+            name: 'sub1',
+            className: 'item-sub',
+            children: {
+              className: 'item-sub-item',
+              children: [
+                {
+                  name: 'image0',
+                  className: 'item-image',
+                  children:
+                    'https://gw.alipayobjects.com/zos/rmsportal/ruHbkzzMKShUpDYMEmHM.svg',
+                },
+                {
+                  name: 'title',
+                  className: 'item-title',
+                  children: 'Ant Design',
+                },
+                {
+                  name: 'content',
+                  className: 'item-content',
+                  children: '企业级 UI 设计体系',
+                },
+              ],
+            },
+          },
+        ],
       },
     ],
   },
   mobileMenu: { className: 'header0-mobile-menu' },
 };
 export const Banner00DataSource = {
-  wrapper: { className: 'banner0 kmniwde21cf-editor_css' },
+  wrapper: { className: 'banner0' },
   textWrapper: { className: 'banner0-text-wrapper' },
   title: {
-    className: 'banner0-title kmniwgt8su-editor_css',
-    children: 'https://i.postimg.cc/gjMgMHQ5/USDG-logo.png',
+    className: 'banner0-title knxa1euigfo-editor_css',
+    children: 'https://i.imgur.com/8oebPjS.png',
   },
   content: {
     className: 'banner0-content',
     children: (
       <span>
-        <span>
-          <span>
-            <p>USDG, 由ETH2质押收益支撑的稳定币</p>
-          </span>
-        </span>
+        <p>A Stablecoin Backed by ETH2.0 Staking and Staking Rewards</p>
       </span>
     ),
   },
   button: {
-    className: 'banner0-button kmniwk25wp-editor_css',
-    children: 'Learn More',
+    className: 'banner0-button',
+    children: (
+      <span>
+        <span>
+          <p>
+            USDG W<span>hitepaper</span>
+          </p>
+        </span>
+      </span>
+    ),
+    href:
+      'https://github.com/eth2pos/usdg-whitepaper/blob/main/USDG-whitepaper.pdf',
   },
 };
 export const Content00DataSource = {
@@ -56,7 +114,7 @@ export const Content00DataSource = {
         name: 'title',
         children: (
           <span>
-            <p>USDG介绍</p>
+            <p>What is USDG</p>
           </span>
         ),
       },
@@ -77,16 +135,14 @@ export const Content00DataSource = {
               name: 'image',
               className: 'content0-block-icon',
               children:
-                'https://zos.alipayobjects.com/rmsportal/WBnVOjtIlGWbzyQivuyq.png',
+                'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/openmoji/272/money-bag_1f4b0.png',
             },
             {
               name: 'title',
               className: 'content0-block-title',
               children: (
                 <span>
-                  <span>
-                    <p>币值稳定</p>
-                  </span>
+                  <p>1:1 USD Geg</p>
                 </span>
               ),
             },
@@ -94,7 +150,10 @@ export const Content00DataSource = {
               name: 'content',
               children: (
                 <span>
-                  <p>ETH2质押奖励支持币价</p>
+                  <p>
+                    USDG is a stablecoin cryptocurrency 1:1 pegged to USD. You
+                    can trade USDG just like USDT or USDC in any exchanges.
+                  </p>
                 </span>
               ),
             },
@@ -113,14 +172,14 @@ export const Content00DataSource = {
               name: 'image',
               className: 'content0-block-icon',
               children:
-                'https://zos.alipayobjects.com/rmsportal/YPMsLQuCEXtuEkmXTTdk.png',
+                'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/openmoji/272/gem-stone_1f48e.png',
             },
             {
               name: 'title',
               className: 'content0-block-title',
               children: (
                 <span>
-                  <p>层级锁定</p>
+                  <p>ETH Collateralized</p>
                 </span>
               ),
             },
@@ -128,7 +187,11 @@ export const Content00DataSource = {
               name: 'content',
               children: (
                 <span>
-                  <p>转账即可自动形成层级关系</p>
+                  <p>
+                    Each USDG is minted from the same dollar worth
+                    collateralized ETH. Users who deposit $1000 worth ETH can
+                    mint the 1000 USDG.
+                  </p>
                 </span>
               ),
             },
@@ -147,20 +210,14 @@ export const Content00DataSource = {
               name: 'image',
               className: 'content0-block-icon',
               children:
-                'https://zos.alipayobjects.com/rmsportal/EkXWVvAaFJKCzhMmQYiX.png',
+                'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/openmoji/272/party-popper_1f389.png',
             },
             {
               name: 'title',
               className: 'content0-block-title',
               children: (
                 <span>
-                  <span>
-                    <span>
-                      <span>
-                        <p>持币生息</p>
-                      </span>
-                    </span>
-                  </span>
+                  <p>Mining While Holding</p>
                 </span>
               ),
             },
@@ -168,11 +225,11 @@ export const Content00DataSource = {
               name: 'content',
               children: (
                 <span>
-                  <span>
-                    <span>
-                      <p>年收益率为：4.9%-21%</p>
-                    </span>
-                  </span>
+                  <p>
+                    Whenever a new USDG is minted, previous holders could get
+                    rewards. Rewards come from the new ETH produced in ETH2.0
+                    staking program.&nbsp;
+                  </p>
                 </span>
               ),
             },
@@ -182,10 +239,400 @@ export const Content00DataSource = {
     ],
   },
 };
-export const Feature30DataSource = {
-  wrapper: { className: 'home-page-wrapper content3-wrapper' },
-  page: { className: 'home-page content3' },
+export const Feature80DataSource = {
+  wrapper: { className: 'home-page-wrapper feature8-wrapper' },
+  page: { className: 'home-page feature8' },
   OverPack: { playScale: 0.3 },
+  titleWrapper: {
+    className: 'feature8-title-wrapper',
+    children: [
+      {
+        name: 'title',
+        className: 'feature8-title-h1',
+        children: (
+          <span>
+            <p>How to Get USDG</p>
+          </span>
+        ),
+      },
+      {
+        name: 'content',
+        className: 'feature8-title-content',
+        children: (
+          <span>
+            <p>USDG Dapp is hosted on IPFS, which can never be shutdown</p>
+            <p>contract address: 0xbd62253c8033f3907c0800780662eab7378a4b96</p>
+          </span>
+        ),
+      },
+    ],
+  },
+  childWrapper: {
+    className: 'feature8-button-wrapper',
+    children: [
+      {
+        name: 'button',
+        className: 'feature8-button',
+        children: {
+          href:
+            'https://bafybeifsnmhtjifvls5x6f2kajzld457o2bjgcksn5z6s7olx7m72l7lke.ipfs.cf-ipfs.com/#/',
+          children: (
+            <span>
+              <p>Go to USDG Dapp</p>
+            </span>
+          ),
+        },
+      },
+    ],
+  },
+  Carousel: {
+    dots: false,
+    className: 'feature8-carousel',
+    wrapper: { className: 'feature8-block-wrapper' },
+    children: {
+      className: 'feature8-block knxa5wwfg4m-editor_css',
+      titleWrapper: {
+        className: 'feature8-carousel-title-wrapper',
+        title: { className: 'feature8-carousel-title knxa5c274qk-editor_css' },
+      },
+      children: [
+        {
+          name: 'block0',
+          className: 'feature8-block-row knxa5809qz-editor_css',
+          gutter: 120,
+          title: {
+            className: 'feature8-carousel-title-block',
+            children: '平台自主训练流程',
+          },
+          children: [
+            {
+              className: 'feature8-block-col',
+              md: 6,
+              xs: 24,
+              name: 'child0',
+              arrow: {
+                className: 'feature8-block-arrow',
+                children:
+                  'https://gw.alipayobjects.com/zos/basement_prod/167bee48-fbc0-436a-ba9e-c116b4044293.svg',
+              },
+              children: {
+                className: 'feature8-block-child',
+                children: [
+                  {
+                    name: 'image',
+                    className: 'feature8-block-image',
+                    children:
+                      'https://gw.alipayobjects.com/zos/basement_prod/d8933673-1463-438a-ac43-1a8f193ebf34.svg',
+                  },
+                  {
+                    name: 'title',
+                    className: 'feature8-block-title',
+                    children: (
+                      <span>
+                        <p>Visit USDG Dapp</p>
+                      </span>
+                    ),
+                  },
+                  {
+                    name: 'content',
+                    className: 'feature8-block-content',
+                    children: (
+                      <span>
+                        <span>
+                          <span>
+                            <span>
+                              <p>
+                                <br />
+                              </p>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    ),
+                  },
+                ],
+              },
+            },
+            {
+              className: 'feature8-block-col',
+              md: 6,
+              xs: 24,
+              name: 'child1',
+              arrow: {
+                className: 'feature8-block-arrow',
+                children:
+                  'https://gw.alipayobjects.com/zos/basement_prod/167bee48-fbc0-436a-ba9e-c116b4044293.svg',
+              },
+              children: {
+                className: 'feature8-block-child',
+                children: [
+                  {
+                    name: 'image',
+                    className: 'feature8-block-image',
+                    children:
+                      'https://gw.alipayobjects.com/zos/basement_prod/d8933673-1463-438a-ac43-1a8f193ebf34.svg',
+                  },
+                  {
+                    name: 'title',
+                    className: 'feature8-block-title',
+                    children: (
+                      <span>
+                        <p>Connect wallet</p>
+                      </span>
+                    ),
+                  },
+                  {
+                    name: 'content',
+                    className: 'feature8-block-content',
+                    children: (
+                      <span>
+                        <p>
+                          <br />
+                        </p>
+                      </span>
+                    ),
+                  },
+                ],
+              },
+            },
+            {
+              className: 'feature8-block-col',
+              md: 6,
+              xs: 24,
+              name: 'child2',
+              arrow: {
+                className: 'feature8-block-arrow',
+                children:
+                  'https://gw.alipayobjects.com/zos/basement_prod/167bee48-fbc0-436a-ba9e-c116b4044293.svg',
+              },
+              children: {
+                className: 'feature8-block-child',
+                children: [
+                  {
+                    name: 'image',
+                    className: 'feature8-block-image',
+                    children:
+                      'https://gw.alipayobjects.com/zos/basement_prod/d8933673-1463-438a-ac43-1a8f193ebf34.svg',
+                  },
+                  {
+                    name: 'title',
+                    className: 'feature8-block-title',
+                    children: (
+                      <span>
+                        <p>Exchange USDG with ETH</p>
+                      </span>
+                    ),
+                  },
+                  {
+                    name: 'content',
+                    className: 'feature8-block-content knxa5sukgta-editor_css',
+                    children: (
+                      <span>
+                        <p>
+                          <br />
+                        </p>
+                      </span>
+                    ),
+                  },
+                ],
+              },
+            },
+            {
+              className: 'feature8-block-col',
+              md: 6,
+              xs: 24,
+              name: 'child3',
+              arrow: {
+                className: 'feature8-block-arrow',
+                children:
+                  'https://gw.alipayobjects.com/zos/basement_prod/167bee48-fbc0-436a-ba9e-c116b4044293.svg',
+              },
+              children: {
+                className: 'feature8-block-child',
+                children: [
+                  {
+                    name: 'image',
+                    className: 'feature8-block-image',
+                    children:
+                      'https://gw.alipayobjects.com/zos/basement_prod/d8933673-1463-438a-ac43-1a8f193ebf34.svg',
+                  },
+                  {
+                    name: 'title',
+                    className: 'feature8-block-title',
+                    children: (
+                      <span>
+                        <p>Start using USDG</p>
+                      </span>
+                    ),
+                  },
+                  {
+                    name: 'content',
+                    className: 'feature8-block-content',
+                    children: (
+                      <span>
+                        <p>
+                          <br />
+                        </p>
+                      </span>
+                    ),
+                  },
+                ],
+              },
+            },
+          ],
+        },
+      ],
+    },
+  },
+};
+export const Content10DataSource = {
+  wrapper: { className: 'home-page-wrapper content1-wrapper' },
+  OverPack: { className: 'home-page content1', playScale: 0.3 },
+  imgWrapper: { className: 'content1-img', md: 10, xs: 24 },
+  img: {
+    children:
+      'https://cdn.shopifycdn.net/s/files/1/1061/1924/products/Money_with_Wings_Emoji_large.png?v=1571606064',
+  },
+  textWrapper: { className: 'content1-text', md: 14, xs: 24 },
+  title: {
+    className: 'content1-title',
+    children: (
+      <span>
+        <p>USDG Price Stability</p>
+      </span>
+    ),
+  },
+  content: {
+    className: 'content1-content',
+    children: (
+      <span>
+        <p>
+          Ethereum core developer team is upgrading ETH to make it more
+          scalable, more secure and more sustainable. The Beacon Chain is the
+          first addition to ETH2.0 network, transferring from PoW to PoS. The
+          official ETH2.0 staking reward is 8.1%, and produces new ETH every 6
+          minutes. The staked ETH and newly produced ETH become the value
+          backing USDG.&nbsp;
+        </p>
+      </span>
+    ),
+  },
+};
+export const Feature20DataSource = {
+  wrapper: { className: 'home-page-wrapper content2-wrapper' },
+  OverPack: { className: 'home-page content2', playScale: 0.3 },
+  imgWrapper: { className: 'content2-img', md: 10, xs: 24 },
+  img: {
+    children:
+      'https://zos.alipayobjects.com/rmsportal/WBnVOjtIlGWbzyQivuyq.png',
+  },
+  textWrapper: { className: 'content2-text', md: 14, xs: 24 },
+  title: {
+    className: 'content2-title',
+    children: (
+      <span>
+        <p>Mining While Holding</p>
+      </span>
+    ),
+  },
+  content: {
+    className: 'content2-content',
+    children: (
+      <span>
+        <p>
+          In the traditional financial world, newly issued currencies create
+          inflation, which results in the reduction of purchasing power per unit
+          of money. Every holder of that currency suffers from a loss of real
+          value.
+        </p>
+        <p>
+          Instead of reducing purchasing power, whenever a new USDG is minted,
+          previous holders could get reward. Again, the rewards are backed by
+          new ETH generated from ETH2.0 staking program. USDG team also creates
+          a model of FTC to further accomplish the goal.&nbsp;
+        </p>
+      </span>
+    ),
+  },
+};
+export const Feature10DataSource = {
+  wrapper: { className: 'home-page-wrapper content1-wrapper' },
+  OverPack: { className: 'home-page content1', playScale: 0.3 },
+  imgWrapper: { className: 'content1-img', md: 10, xs: 24 },
+  img: {
+    children:
+      'https://zos.alipayobjects.com/rmsportal/EkXWVvAaFJKCzhMmQYiX.png',
+  },
+  textWrapper: { className: 'content1-text', md: 14, xs: 24 },
+  title: {
+    className: 'content1-title',
+    children: (
+      <span>
+        <p>First Transfer Contract (FTC)</p>
+      </span>
+    ),
+  },
+  content: {
+    className: 'content1-content',
+    children: (
+      <span>
+        <p>
+          After the transfer is broadcasted, the mutual relationship between you
+          and your recipient is forever locked on the blockchain by FTC, and the
+          hierarchy is up to 6 levels.{' '}
+        </p>
+        <p>
+          You will get bonus rewards from total USDG of the 6 levels below,
+          currently at 1% APY.
+        </p>
+        <p>
+          Through involving more people in USDG, you could take the bonus in
+          miniting every additional USDG.
+        </p>
+      </span>
+    ),
+  },
+};
+export const Feature21DataSource = {
+  wrapper: { className: 'home-page-wrapper content2-wrapper' },
+  OverPack: { className: 'home-page content2', playScale: 0.3 },
+  imgWrapper: { className: 'content2-img', md: 10, xs: 24 },
+  img: {
+    children:
+      'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/google/274/currency-exchange_1f4b1.png',
+  },
+  textWrapper: { className: 'content2-text', md: 14, xs: 24 },
+  title: {
+    className: 'content2-title',
+    children: (
+      <span>
+        <p>Exchange of USDG</p>
+      </span>
+    ),
+  },
+  content: {
+    className: 'content2-content',
+    children: (
+      <span>
+        <p>
+          As a stablecoin, USDG is designed as an USD peg. You can exchange USDG
+          like any other stablecoins like USDT, USDC or DAI in all major
+          exchanges.
+        </p>
+        <p>
+          The official way to burn USDG is to exchange USDG to ETH through the
+          official website. There are two exchange options.
+        </p>
+        <p>Option 1: exchange immediately, and there will be a 10% fee.</p>
+        <p>Option 2: Be in the line, and there will be 0 fee.</p>
+      </span>
+    ),
+  },
+};
+export const Teams10DataSource = {
+  wrapper: { className: 'home-page-wrapper teams1-wrapper' },
+  page: { className: 'home-page teams1' },
+  OverPack: { playScale: 0.3, className: '' },
   titleWrapper: {
     className: 'title-wrapper',
     children: [
@@ -193,137 +640,216 @@ export const Feature30DataSource = {
         name: 'title',
         children: (
           <span>
-            <p>新一代稳定币</p>
-          </span>
-        ),
-        className: 'title-h1',
-      },
-      {
-        name: 'content',
-        className: 'title-content',
-        children: (
-          <span>
-            <p>基于ETH2.0质押</p>
+            <span>
+              <span>
+                <span>
+                  <span>
+                    <span>
+                      <p>USDG Team</p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </span>
           </span>
         ),
       },
     ],
   },
   block: {
-    className: 'content3-block-wrapper',
+    className: 'block-wrapper',
     children: [
       {
         name: 'block0',
-        className: 'content3-block',
+        className: 'block',
         md: 8,
         xs: 24,
-        children: {
-          icon: {
-            className: 'content3-icon kmp17yuotn9-editor_css',
-            children:
-              'https://www.flaticon.com/svg/vstatic/svg/3587/3587791.svg?token=exp=1616604543~hmac=b1401085ecae322ade144302a742958e',
-          },
-          textWrapper: { className: 'content3-text' },
-          title: {
-            className: 'content3-title',
-            children: (
-              <span>
-                <p>币值支撑</p>
-              </span>
-            ),
-          },
-          content: {
-            className: 'content3-content',
-            children: (
-              <span>
+        titleWrapper: {
+          children: [
+            {
+              name: 'image',
+              className: 'teams1-image',
+              children:
+                'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/joypixels/275/bear_1f43b.png',
+            },
+            {
+              name: 'title',
+              className: 'teams1-title',
+              children: (
                 <span>
-                  <p>
-                    基于ETH2网络质押的ETH量和出币量，既可以确保USDG的币值稳定的有质押进V神合约地址的ETH支撑，又可以通过ETH的出币自动生产出更多USDG
-                  </p>
+                  <p>Martin Tesla</p>
                 </span>
-              </span>
-            ),
-          },
+              ),
+            },
+            {
+              name: 'content',
+              className: 'teams1-job',
+              children: (
+                <span>
+                  <span>
+                    <h3>CEO and founder</h3>
+                  </span>
+                </span>
+              ),
+            },
+            {
+              name: 'content1',
+              className: 'teams1-content',
+              children: (
+                <span>
+                  <span>
+                    <p>Founder of USDG</p>
+                    <p>
+                      <span>
+                        CEO of BEC(Blockchain Engineers Foundation of Canada)
+                      </span>
+                    </p>
+                  </span>
+                </span>
+              ),
+            },
+          ],
         },
       },
       {
         name: 'block1',
-        className: 'content3-block',
+        className: 'block',
         md: 8,
         xs: 24,
-        children: {
-          icon: {
-            className: 'content3-icon kmp18269uxg-editor_css',
-            children:
-              'https://www.flaticon.com/svg/vstatic/svg/3587/3587823.svg?token=exp=1616604543~hmac=d3d2bb8ccd773fd3a6e597948f65f950',
-          },
-          textWrapper: { className: 'content3-text' },
-          title: {
-            className: 'content3-title',
-            children: (
-              <span>
-                <p>分布式货币基金池</p>
-              </span>
-            ),
-          },
-          content: {
-            className: 'content3-content',
-            children: (
-              <span>
+        titleWrapper: {
+          children: [
+            {
+              name: 'image',
+              className: 'teams1-image',
+              children:
+                'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/twitter/281/koala_1f428.png',
+            },
+            {
+              name: 'title',
+              className: 'teams1-title',
+              children: (
                 <span>
-                  <p>
-                    0x地址即是“分布式货币基金池”，而不是把资金归集到一个“账户内”实现一种分布式的货币基金！每个0x以太坊地址都是一个货币理财基金
-                  </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p>Joe</p>
                 </span>
-              </span>
-            ),
-          },
+              ),
+            },
+            {
+              name: 'content',
+              className: 'teams1-job',
+              children: (
+                <span>
+                  <span>
+                    <span>
+                      <span>
+                        <h3>CTO</h3>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              ),
+            },
+            {
+              name: 'content1',
+              className: 'teams1-content',
+              children: (
+                <span>
+                  <span>
+                    <span>
+                      <span>
+                        <span>
+                          <span>
+                            <span>
+                              <span>
+                                <span>
+                                  <span>
+                                    <span>
+                                      <span>
+                                        <p>Solidity developer since 2017</p>
+                                        <p>
+                                          Serial entrepreneur at two blockchain
+                                          startups
+                                        </p>
+                                      </span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              ),
+            },
+          ],
         },
       },
       {
         name: 'block2',
-        className: 'content3-block',
+        className: 'block',
         md: 8,
         xs: 24,
-        children: {
-          icon: {
-            className: 'content3-icon kmp183k6ovf-editor_css',
-            children:
-              'https://www.flaticon.com/svg/vstatic/svg/3588/3588065.svg?token=exp=1616604543~hmac=7c93a924c9811022aecb6caf49cc3972',
-          },
-          textWrapper: { className: 'content3-text' },
-          title: {
-            className: 'content3-title',
-            children: (
-              <span>
+        titleWrapper: {
+          children: [
+            {
+              name: 'image',
+              className: 'teams1-image',
+              children:
+                'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/google/274/pig-face_1f437.png',
+            },
+            {
+              name: 'title',
+              className: 'teams1-title',
+              children: (
                 <span>
-                  <p>新型金融关系网络</p>
+                  <span>
+                    <p>Gorge</p>
+                  </span>
                 </span>
-              </span>
-            ),
-          },
-          content: {
-            className: 'content3-content',
-            children: (
-              <span>
+              ),
+            },
+            {
+              name: 'content',
+              className: 'teams1-job',
+              children: (
                 <span>
-                  <p>
-                    无需打开Dapp，无需推荐码，无需注册账号，无需允许和自动授权，仅需“转账”且到以太坊钱包地址，即可自动的形成层级关系。
-                  </p>
-                  <p>
-                    FTC
-                    Dapp锁定，每次交易都将会有0.1%的手续费永久性的和推荐人挂钩（6层关系网络，永久锁定）
-                  </p>
-                  <p>
-                    <br />
-                  </p>
+                  <span>
+                    <span>
+                      <span>
+                        <span>
+                          <span>
+                            <h3>Operations</h3>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
                 </span>
-              </span>
-            ),
-          },
+              ),
+            },
+            {
+              name: 'content1',
+              className: 'teams1-content',
+              children: (
+                <span>
+                  <span>
+                    <span>
+                      <span>
+                        <span>
+                          <span>
+                            <p>Previously @ AI unicorn</p>
+                            <p>Leader of multiple operation teams</p>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              ),
+            },
+          ],
         },
       },
     ],
@@ -336,7 +862,8 @@ export const Footer00DataSource = {
     className: 'copyright',
     children: (
       <span>
-        <span>©2021 USDG&nbsp;All Rights Reserved</span>
+        ©2018 <a href="https://motion.ant.design">Ant Motion</a> All Rights
+        Reserved
       </span>
     ),
   },
