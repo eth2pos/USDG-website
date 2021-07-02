@@ -85,6 +85,7 @@ export const Banner00DataSource = {
     children: (
       <span>
         <p>A Stablecoin Backed by ETH2.0 Staking and Staking Rewards</p>
+        <p> #imToken #7071 We are providing information of USDG token on imToken. After the submission, our logo and more detailed info will be displayed, now you can manage your USDG tokens on imToken. </p>
       </span>
     ),
   },
